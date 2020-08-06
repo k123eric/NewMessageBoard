@@ -3,6 +3,8 @@ jQuery(document).ready(initialize);
 let id = 1;
 let editId = 1;
 
+// 測試桌機
+
 function initialize() {
     $("#loading").remove();
     initTable();
