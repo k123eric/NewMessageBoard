@@ -1,0 +1,26 @@
+#messageBoardTitle {
+    margin-left: 15%;
+}
+
+#postButton {
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
+#table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    margin-left: 0;
+}
+
+.AutoNewline {
+    word-break: break-all;
+}
+
+#loading {
+    text-align: center;
+}
