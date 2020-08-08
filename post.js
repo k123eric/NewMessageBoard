@@ -3,15 +3,10 @@ jQuery(document).ready(initialize);
 let id = 1;
 let editId = 1;
 
-// 測試桌機
-
 function initialize() {
     $("#loading").remove();
     initTable();
-    $("#postButton").on('click', newPost);
-    $("#sendButton").on('click', sendPost);
-    $("#editButton").on('click', editPost);
-    $("#deleteButton").on('click', deleted);
+    buttonAddListener();
 }
 
 function initTable() {
@@ -111,4 +106,11 @@ function editPost() {
 function deleted() {
     $("#" + editId).remove();
     $('#deleteModal').modal('hide');
+}
+
+function buttonAddListener() {
+    $("#postButton").on('click', newPost);
+    $("#sendButton").on('click', sendPost);
+    $("#editButton").on('click', editPost);
+    $("#deleteButton").on('click', deleted);
 }
